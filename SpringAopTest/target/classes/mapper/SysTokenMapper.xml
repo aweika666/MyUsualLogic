@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.com.aweika.dao.SysTokenDao">
+    <resultMap id="BaseResultMap" type="com.aweika.common.sys.entitySys.SysToken">
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="expireTime" jdbcType="TIMESTAMP" property="expireTime" />
+        <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+        <result column="val" jdbcType="LONGVARCHAR" property="val" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, expireTime, createTime, updateTime,val
+  </sql>
+
+    <insert id="insert" parameterType="com.aweika.common.sys.entitySys.SysToken">
+    insert into sys_token (id, expireTime, createTime,
+      updateTime, val)
+    values (#{id,jdbcType=VARCHAR}, #{expireTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP},
+      #{updateTime,jdbcType=TIMESTAMP}, #{val,jdbcType=LONGVARCHAR})
+  </insert>
+
+    <select id="getById" resultMap="BaseResultMap">
+        select * from sys_token t where t.id = #{id}
+    </select>
+
+    <delete id="delete" >
+        delete from sys_token where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.aweika.common.sys.entitySys.SysToken">
+        update sys_token t set t.val = #{val}, t.expireTime = #{expireTime}, t.updateTime = #{updateTime} where t.id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.com.com.aweika.dao.SysUserDao">
+  <resultMap id="BaseResultMap" type="com.com.aweika.common.sys.entitySys.SysUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="unit_level" jdbcType="INTEGER" property="unitLevel" />
+    <result column="county" jdbcType="VARCHAR" property="county" />
+    <result column="town" jdbcType="VARCHAR" property="town" />
+    <result column="plat" jdbcType="VARCHAR" property="plat" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="ent_name" jdbcType="VARCHAR" property="entName" />
+    <result column="credit_code" jdbcType="VARCHAR" property="creditCode" />
+    <result column="units" jdbcType="VARCHAR" property="units" />
+    <result column="office" jdbcType="VARCHAR" property="office" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="first_login" jdbcType="INTEGER" property="firstLogin" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="is_admin" jdbcType="INTEGER" property="isAdmin" />
+    <result column="create_id" jdbcType="INTEGER" property="createId" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, username, password, real_name, unit_level, county, town, plat, mobile, ent_name,
+    credit_code, units, office, status, first_login, last_login_time, create_time, update_time,
+    is_admin, create_id, role_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    *
+    from sys_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sys_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+<!--  <insert id="insert" parameterType="com.aweikaommon.sys.entitySys.SysUser" useGeneratedKeys="true" keyProperty="id">
+    insert into sys_user (id, username, password,
+    real_name, unit_level, county,
+    town, plat, mobile,
+    ent_name, credit_code, units, office,
+    status, first_login, last_login_time,
+    create_time, update_time, is_admin,
+    create_id, role_id)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+    #{realName,jdbcType=VARCHAR}, #{unitLevel,jdbcType=INTEGER}, #{county,jdbcType=VARCHAR},
+    #{town,jdbcType=VARCHAR}, #{plat,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR},
+    #{entName,jdbcType=VARCHAR}, #{creditCode,jdbcType=VARCHAR}, #{units,jdbcType=VARCHAR}, #{office,jdbcType=VARCHAR},
+    #{status,jdbcType=BIT}, #{firstLogin,jdbcType=INTEGER}, #{lastLoginTime,jdbcType=TIMESTAMP},
+    #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{isAdmin,jdbcType=INTEGER},
+    #{createId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aweikaommon.sys.entitySys.SysUser" useGeneratedKeys="true" keyProperty="id">
+    insert into sys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if testClassload="id != null">
+        id,
+      </if>
+      <if testClassload="username != null">
+        username,
+      </if>
+      <if testClassload="password != null">
+        password,
+      </if>
+      <if testClassload="realName != null">
+        real_name,
+      </if>
+      <if testClassload="unitLevel != null">
+        unit_level,
+      </if>
+      <if testClassload="county != null and county != ''">
+        county,
+      </if>
+      <if testClassload="town != null and town != ''">
+        town,
+      </if>
+      <if testClassload="plat != null">
+        plat,
+      </if>
+      <if testClassload="mobile != null">
+        mobile,
+      </if>
+      <if testClassload="entName != null">
+        ent_name,
+      </if>
+      <if testClassload="creditCode != null">
+        credit_code,
+      </if>
+      <if testClassload="units != null">
+        units,
+      </if>
+      <if testClassload="status != null">
+        status,
+      </if>
+      <if testClassload="firstLogin != null">
+        first_login,
+      </if>
+      <if testClassload="lastLoginTime != null">
+        last_login_time,
+      </if>
+      <if testClassload="createTime != null">
+        create_time,
+      </if>
+      <if testClassload="updateTime != null">
+        update_time,
+      </if>
+      <if testClassload="isAdmin != null">
+        is_admin,
+      </if>
+      <if testClassload="createId != null">
+        create_id,
+      </if>
+      <if testClassload="roleId != null">
+        role_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if testClassload="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if testClassload="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="unitLevel != null">
+        #{unitLevel,jdbcType=INTEGER},
+      </if>
+      <if testClassload="county != null and county != ''">
+        #{county,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="town != null and town != ''">
+        #{town,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="plat != null">
+        #{plat,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="entName != null">
+        #{entName,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="creditCode != null">
+        #{creditCode,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="units != null">
+        #{units,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="status != null">
+        #{status,jdbcType=BIT},
+      </if>
+      <if testClassload="firstLogin != null">
+        #{firstLogin,jdbcType=INTEGER},
+      </if>
+      <if testClassload="lastLoginTime != null">
+        #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="isAdmin != null">
+        #{isAdmin,jdbcType=INTEGER},
+      </if>
+      <if testClassload="createId != null">
+        #{createId,jdbcType=INTEGER},
+      </if>
+      <if testClassload="roleId != null">
+        #{roleId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aweikaommon.sys.entitySys.SysUser">
+    update sys_user
+    <set>
+      <if testClassload="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="realName != null">
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="unitLevel != null">
+        unit_level = #{unitLevel,jdbcType=INTEGER},
+      </if>
+      <if testClassload="county != null and county != ''">
+        county = #{county,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="town != null and town != ''">
+        town = #{town,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="plat != null">
+        plat = #{plat,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="entName != null">
+        ent_name = #{entName,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="creditCode != null">
+        credit_code = #{creditCode,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="units != null">
+        units = #{units,jdbcType=VARCHAR},
+      </if>
+      <if testClassload="status != null">
+        status = #{status,jdbcType=BIT},
+      </if>
+      <if testClassload="firstLogin != null">
+        first_login = #{firstLogin,jdbcType=INTEGER},
+      </if>
+      <if testClassload="lastLoginTime != null">
+        last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if testClassload="isAdmin != null">
+        is_admin = #{isAdmin,jdbcType=INTEGER},
+      </if>
+      <if testClassload="createId != null">
+        create_id = #{createId,jdbcType=INTEGER},
+      </if>
+      <if testClassload="roleId != null">
+        role_id = #{roleId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.aweikaommon.sys.entitySys.SysUser">
+    update sys_user
+    set username = #{username,jdbcType=VARCHAR},
+    password = #{password,jdbcType=VARCHAR},
+    real_name = #{realName,jdbcType=VARCHAR},
+    unit_level = #{unitLevel,jdbcType=INTEGER},
+    county = #{county,jdbcType=VARCHAR},
+    town = #{town,jdbcType=VARCHAR},
+    plat = #{plat,jdbcType=VARCHAR},
+    mobile = #{mobile,jdbcType=VARCHAR},
+    ent_name = #{entName,jdbcType=VARCHAR},
+    credit_code = #{creditCode,jdbcType=VARCHAR},
+    units = #{units,jdbcType=VARCHAR},
+    status = #{status,jdbcType=BIT},
+    first_login = #{firstLogin,jdbcType=INTEGER},
+    last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+    create_time = #{createTime,jdbcType=TIMESTAMP},
+    update_time = #{updateTime,jdbcType=TIMESTAMP},
+    is_admin = #{isAdmin,jdbcType=INTEGER},
+    create_id = #{createId,jdbcType=INTEGER},
+    role_id = #{roleId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>-->
+
+  <insert id="insert" parameterType="com.com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    insert into sys_user (id, username, password,
+    real_name, unit_level, county,
+    town, plat, mobile,
+    ent_name, credit_code, units,
+    office, status, first_login,
+    last_login_time, create_time, update_time,
+    is_admin, create_id, role_id
+    )
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+    #{realName,jdbcType=VARCHAR}, #{unitLevel,jdbcType=INTEGER}, #{county,jdbcType=VARCHAR},
+    #{town,jdbcType=VARCHAR}, #{plat,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR},
+    #{entName,jdbcType=VARCHAR}, #{creditCode,jdbcType=VARCHAR}, #{units,jdbcType=VARCHAR},
+    #{office,jdbcType=VARCHAR}, #{status,jdbcType=TINYINT}, #{firstLogin,jdbcType=INTEGER},
+    #{lastLoginTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},
+    #{isAdmin,jdbcType=INTEGER}, #{createId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}
+    )
+  </insert>
+  <insert id="insertSelective" parameterType="com.com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+    insert into sys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="realName != null">
+        real_name,
+      </if>
+      <if test="unitLevel != null">
+        unit_level,
+      </if>
+      <if test="county != null">
+        county,
+      </if>
+      <if test="town != null">
+        town,
+      </if>
+      <if test="plat != null">
+        plat,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="entName != null">
+        ent_name,
+      </if>
+      <if test="creditCode != null">
+        credit_code,
+      </if>
+      <if test="units != null">
+        units,
+      </if>
+      <if test="office != null and office != ''">
+        office,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="firstLogin != null">
+        first_login,
+      </if>
+      <if test="lastLoginTime != null">
+        last_login_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="isAdmin != null">
+        is_admin,
+      </if>
+      <if test="createId != null">
+        create_id,
+      </if>
+      <if test="roleId != null">
+        role_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitLevel != null">
+        #{unitLevel,jdbcType=INTEGER},
+      </if>
+      <if test="county != null">
+        #{county,jdbcType=VARCHAR},
+      </if>
+      <if test="town != null">
+        #{town,jdbcType=VARCHAR},
+      </if>
+      <if test="plat != null">
+        #{plat,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="entName != null">
+        #{entName,jdbcType=VARCHAR},
+      </if>
+      <if test="creditCode != null">
+        #{creditCode,jdbcType=VARCHAR},
+      </if>
+      <if test="units != null">
+        #{units,jdbcType=VARCHAR},
+      </if>
+      <if test="office != null and office != ''">
+        #{office,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="firstLogin != null">
+        #{firstLogin,jdbcType=INTEGER},
+      </if>
+      <if test="lastLoginTime != null">
+        #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isAdmin != null">
+        #{isAdmin,jdbcType=INTEGER},
+      </if>
+      <if test="createId != null">
+        #{createId,jdbcType=INTEGER},
+      </if>
+      <if test="roleId != null">
+        #{roleId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.com.aweika.common.sys.entitySys.SysUser">
+    update sys_user
+    <set>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="unitLevel != null">
+        unit_level = #{unitLevel,jdbcType=INTEGER},
+      </if>
+      <if test="county != null">
+        county = #{county,jdbcType=VARCHAR},
+      </if>
+      <if test="town != null">
+        town = #{town,jdbcType=VARCHAR},
+      </if>
+      <if test="plat != null">
+        plat = #{plat,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="entName != null">
+        ent_name = #{entName,jdbcType=VARCHAR},
+      </if>
+      <if test="creditCode != null">
+        credit_code = #{creditCode,jdbcType=VARCHAR},
+      </if>
+      <if test="units != null ">
+        units = #{units,jdbcType=VARCHAR},
+      </if>
+      <if test="office == null or (office != null and office == '')">
+        office = null,
+      </if>
+      <if test="office != null and office != ''">
+        office = #{office},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="firstLogin != null">
+        first_login = #{firstLogin,jdbcType=INTEGER},
+      </if>
+      <if test="lastLoginTime != null">
+        last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isAdmin != null">
+        is_admin = #{isAdmin,jdbcType=INTEGER},
+      </if>
+      <if test="createId != null">
+        create_id = #{createId,jdbcType=INTEGER},
+      </if>
+      <if test="roleId != null">
+        role_id = #{roleId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.com.aweika.common.sys.entitySys.SysUser">
+    update sys_user
+    set username = #{username,jdbcType=VARCHAR},
+    password = #{password,jdbcType=VARCHAR},
+    real_name = #{realName,jdbcType=VARCHAR},
+    unit_level = #{unitLevel,jdbcType=INTEGER},
+    county = #{county,jdbcType=VARCHAR},
+    town = #{town,jdbcType=VARCHAR},
+    plat = #{plat,jdbcType=VARCHAR},
+    mobile = #{mobile,jdbcType=VARCHAR},
+    ent_name = #{entName,jdbcType=VARCHAR},
+    credit_code = #{creditCode,jdbcType=VARCHAR},
+    units = #{units,jdbcType=VARCHAR},
+    office = #{office,jdbcType=VARCHAR},
+    status = #{status,jdbcType=TINYINT},
+    first_login = #{firstLogin,jdbcType=INTEGER},
+    last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+    create_time = #{createTime,jdbcType=TIMESTAMP},
+    update_time = #{updateTime,jdbcType=TIMESTAMP},
+    is_admin = #{isAdmin,jdbcType=INTEGER},
+    create_id = #{createId,jdbcType=INTEGER},
+    role_id = #{roleId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="findByRoleId" resultMap="BaseResultMap">
+    SELECT *
+    FROM sys_user
+    WHERE role_id =#{roleId}
+  </select>
+
+  <select id="findByUsername" resultMap="BaseResultMap">
+    select * from sys_user where  username=#{username}
+  </select>
+  <select id="govUserList" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/>
+    FROM sys_user
+    WHERE 1=1
+    <if test="username != null and username != ''">
+    AND username LIKE concat ('%',#{username,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="realName != null and realName != ''">
+    AND real_name = #{realName,jdbcType=VARCHAR}
+    </if>
+    <if test="mobile != null and mobile != ''">
+    AND mobile = #{mobile,jdbcType=VARCHAR}
+    </if>
+    AND is_admin is null
+    AND unit_level &lt;&gt; 4
+    AND unit_level &lt;&gt; 5
+  </select>
+
+  <select id="findByMobile" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List"/>
+    FROM sys_user
+    WHERE mobile = #{mobile,jdbcType=VARCHAR}
+  </select>
+    <select id="findByUnitLevel" resultType="java.util.Map">
+      select real_name as  realName ,id as userId ,county from  sys_user where unit_level = #{unitLevel} order by county
+
+    </select>
+
+    <update id="updatePassword" >
+    UPDATE sys_user
+    SET password = #{password,jdbcType=VARCHAR},
+    first_login = 1
+    WHERE id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updatePhone">
+    UPDATE sys_user SET mobile = #{newMobile,jdbcType=VARCHAR} WHERE id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

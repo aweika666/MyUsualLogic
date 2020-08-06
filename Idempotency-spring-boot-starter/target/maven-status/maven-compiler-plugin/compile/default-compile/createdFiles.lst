@@ -1,0 +1,5 @@
+com/aweika/advice/IdempotencyAdvice.class
+com/aweika/annotation/Idempotency.class
+com/aweika/configuration/IdempotencyAutoConfiguration.class
+com/aweika/advice/User.class
+com/aweika/advice/Haha.class

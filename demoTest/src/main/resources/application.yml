@@ -1,0 +1,47 @@
+server:
+  port: 8840
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.70.132/wzsys?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 4
+    timeout: 86400
+    password:
+
+
+mybatis:
+  type-aliases-package: com.com.com.aweika.mjlyx.api.entity
+  mapper-locations: classpath:/mapper/*
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+demo:
+  enabled: true
+#    excEnabled: true
+  msg:
+    name: 方启哲
+    age: 18
+    address: 杭州龙湖滟澜山
+
+idempotency:
+  enabled: true
+  configuration:
+    globalExpireTime: 1

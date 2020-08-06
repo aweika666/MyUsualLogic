@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: test.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.331 s <<< FAILURE! - in test.ApplicationTests
+testBean(test.ApplicationTests)  Time elapsed: 0.006 s  <<< ERROR!
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.aweika.ConditionalOnXXXTest.Computer' available: expected single matching bean but found 3: desktopPC,notebookPC,desktopPC2
+	at test.ApplicationTests.testBean(ApplicationTests.java:40)
+

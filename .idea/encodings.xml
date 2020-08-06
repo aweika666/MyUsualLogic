@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CommonUtils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Idempotency-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Idempotency-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RabbitMqTestDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RabbitMqTestDemoConsumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringAopTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringAopTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringTransactional" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringTransactional/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-spirng-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-spirng-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demoTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demoTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enumTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/enumTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/generic/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql-proxy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/protected_private" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/protected_private/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/socketTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/socketTest/src/main/java" charset="UTF-8" />
+  </component>
+</project>

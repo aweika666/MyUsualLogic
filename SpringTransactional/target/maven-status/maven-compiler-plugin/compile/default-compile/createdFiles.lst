@@ -1,0 +1,7 @@
+com/aweika/Application.class
+com/aweika/dao/SysUserDao.class
+com/aweika/web/TestWeb.class
+com/aweika/dao/SysPermissionDao.class
+com/aweika/service/impl/TestServiceImpl.class
+com/aweika/dao/SysTokenDao.class
+com/aweika/service/impl/TestService.class

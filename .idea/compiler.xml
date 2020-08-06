@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demoTest" />
+        <module name="mysql-proxy" />
+        <module name="protected_private" />
+        <module name="SpringTransactional" />
+        <module name="RabbitMqTestDemo" />
+        <module name="CommonUtils" />
+        <module name="wzszjx-common" />
+        <module name="enumTest" />
+        <module name="Idempotency-spring-boot-starter" />
+        <module name="RabbitMqTestDemoConsumer" />
+        <module name="SpringAopTest" />
+        <module name="demo-spirng-boot-starter" />
+        <module name="generic" />
+        <module name="common" />
+        <module name="socketTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="CommonUtils" target="1.8" />
+      <module name="demo-spirng-boot-starter" target="1.8" />
+      <module name="demoTest" target="1.8" />
+      <module name="enumTest" target="1.8" />
+      <module name="generic" target="1.8" />
+      <module name="Idempotency-spring-boot-starter" target="1.8" />
+      <module name="mysql-proxy" target="1.8" />
+      <module name="MyUsualLogic" target="1.8" />
+      <module name="protected_private" target="1.8" />
+      <module name="RabbitMqTestDemo" target="1.8" />
+      <module name="RabbitMqTestDemoConsumer" target="1.8" />
+      <module name="socketTest" target="1.8" />
+      <module name="SpringAopTest" target="1.8" />
+      <module name="SpringTransactional" target="1.8" />
+      <module name="wzszjx-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CommonUtils" options="-parameters" />
+      <module name="Idempotency-spring-boot-starter" options="-parameters" />
+      <module name="RabbitMqTestDemo" options="-parameters" />
+      <module name="RabbitMqTestDemoConsumer" options="-parameters" />
+      <module name="SpringAopTest" options="-parameters" />
+      <module name="SpringTransactional" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="demo-spirng-boot-starter" options="-parameters" />
+      <module name="demoTest" options="-parameters" />
+      <module name="enumTest" options="-parameters" />
+      <module name="generic" options="-parameters" />
+      <module name="mysql-proxy" options="-parameters" />
+      <module name="protected_private" options="-parameters" />
+      <module name="socketTest" options="-parameters" />
+    </option>
+  </component>
+</project>

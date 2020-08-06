@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonUtils/CommonUtils.iml" filepath="$PROJECT_DIR$/CommonUtils/CommonUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Idempotency-spring-boot-starter/Idempotency-spring-boot-starter.iml" filepath="$PROJECT_DIR$/Idempotency-spring-boot-starter/Idempotency-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyUsualLogic.iml" filepath="$PROJECT_DIR$/MyUsualLogic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMqTestDemo/RabbitMqTestDemo.iml" filepath="$PROJECT_DIR$/RabbitMqTestDemo/RabbitMqTestDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMqTestDemoConsumer/RabbitMqTestDemoConsumer.iml" filepath="$PROJECT_DIR$/RabbitMqTestDemoConsumer/RabbitMqTestDemoConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringAopTest/SpringAopTest.iml" filepath="$PROJECT_DIR$/SpringAopTest/SpringAopTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringTransactional/SpringTransactional.iml" filepath="$PROJECT_DIR$/SpringTransactional/SpringTransactional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" filepath="$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoTest/demoTest.iml" filepath="$PROJECT_DIR$/demoTest/demoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enumTest/enumTest.iml" filepath="$PROJECT_DIR$/enumTest/enumTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" filepath="$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/protected_private/protected_private.iml" filepath="$PROJECT_DIR$/protected_private/protected_private.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socketTest/socketTest.iml" filepath="$PROJECT_DIR$/socketTest/socketTest.iml" />
+    </modules>
+  </component>
+</project>
