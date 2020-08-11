@@ -53,4 +53,5 @@ public class FanoutRabbitConfig {
     Binding bindingExchangeC() {
         return BindingBuilder.bind(queueC()).to(fanoutExchange());
     }
+
 }
