@@ -1,33 +1,25 @@
-HELP.md
+/.project
+stacktrace.log
+web-app/WEB-INF/classes
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
 .classpath
-.factorypath
+.settings/
 .project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+db/
+target-eclipse/classes
+*/*.iml
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+*.iws
+*.swp
+projectFilesBackup/
+.idea/
+upload/
+out/
+.DS_Store
+.slcache/
+*.ids
+*.iml
+*.iml
+node_modules/
+/logs/

@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demoTest" />
         <module name="mysql-proxy" />
-        <module name="socketTest" />
+        <module name="wzszjx-common" />
         <module name="protected_private" />
         <module name="SpringTransactional" />
         <module name="RabbitMqTestDemo" />
@@ -21,7 +21,7 @@
         <module name="generic" />
         <module name="aweika-es-api" />
         <module name="common" />
-        <module name="wzszjx-common" />
+        <module name="socketTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

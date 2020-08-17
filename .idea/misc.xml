@@ -19,11 +19,6 @@
         <option value="$PROJECT_DIR$/aweika-es-api/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/aweika-es-api/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="PDMPlugin">
     <option name="customRuleSets">
