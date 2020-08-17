@@ -24,6 +24,7 @@
         <module>mysql-proxy</module>
         <module>RabbitMqTestDemo</module>
         <module>RabbitMqTestDemoConsumer</module>
+        <module>aweika-es-api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

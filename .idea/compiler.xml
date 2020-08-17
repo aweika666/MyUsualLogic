@@ -8,22 +8,24 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demoTest" />
         <module name="mysql-proxy" />
+        <module name="socketTest" />
         <module name="protected_private" />
         <module name="SpringTransactional" />
         <module name="RabbitMqTestDemo" />
         <module name="CommonUtils" />
-        <module name="wzszjx-common" />
+        <module name="RabbitMqTestDemoConsumer" />
         <module name="enumTest" />
         <module name="Idempotency-spring-boot-starter" />
-        <module name="RabbitMqTestDemoConsumer" />
         <module name="SpringAopTest" />
         <module name="demo-spirng-boot-starter" />
         <module name="generic" />
+        <module name="aweika-es-api" />
         <module name="common" />
-        <module name="socketTest" />
+        <module name="wzszjx-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aweika-es-api" target="1.8" />
       <module name="common" target="1.8" />
       <module name="CommonUtils" target="1.8" />
       <module name="demo-spirng-boot-starter" target="1.8" />
@@ -50,6 +52,7 @@
       <module name="RabbitMqTestDemoConsumer" options="-parameters" />
       <module name="SpringAopTest" options="-parameters" />
       <module name="SpringTransactional" options="-parameters" />
+      <module name="aweika-es-api" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="demo-spirng-boot-starter" options="-parameters" />
       <module name="demoTest" options="-parameters" />

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/RabbitMqTestDemoConsumer/RabbitMqTestDemoConsumer.iml" filepath="$PROJECT_DIR$/RabbitMqTestDemoConsumer/RabbitMqTestDemoConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringAopTest/SpringAopTest.iml" filepath="$PROJECT_DIR$/SpringAopTest/SpringAopTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringTransactional/SpringTransactional.iml" filepath="$PROJECT_DIR$/SpringTransactional/SpringTransactional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aweika-es-api/aweika-es-api.iml" filepath="$PROJECT_DIR$/aweika-es-api/aweika-es-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" filepath="$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoTest/demoTest.iml" filepath="$PROJECT_DIR$/demoTest/demoTest.iml" />
