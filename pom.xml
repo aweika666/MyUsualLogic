@@ -26,7 +26,6 @@
         <module>RabbitMqTestDemoConsumer</module>
         <module>aweika-es-api</module>
         <module>websocket-test</module>
-        <module>springboot-websocket-demo</module>
         <module>springboot-websocket-chat</module>
     </modules>
     <parent>
