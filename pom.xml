@@ -25,11 +25,14 @@
         <module>RabbitMqTestDemo</module>
         <module>RabbitMqTestDemoConsumer</module>
         <module>aweika-es-api</module>
+        <module>websocket-test</module>
+        <module>springboot-websocket-demo</module>
+        <module>springboot-websocket-chat</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
+        <version>2.3.3.RELEASE</version>
         <relativePath/>
     </parent>
 

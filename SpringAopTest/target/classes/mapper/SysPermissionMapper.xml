@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.com.aweika.dao.SysPermissionDao">
-  <resultMap id="BaseResultMap" type="com.aweika.common.sys.entitySys.SysPermission">
+<mapper namespace="com.com.com.aweika.dao.SysPermissionDao">
+  <resultMap id="BaseResultMap" type="com.com.aweika.common.sys.entitySys.SysPermission">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="permission" jdbcType="VARCHAR" property="permission" />
@@ -32,7 +32,7 @@
     delete from sys_permission
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.aweika.common.sys.entitySys.SysPermission">
+  <insert id="insert" parameterType="com.com.aweika.common.sys.entitySys.SysPermission">
     insert into sys_permission (id, name, permission, 
       url, c_urls, icon, type, 
       level, parent_id, seq, 
@@ -44,7 +44,7 @@
       #{isUse,jdbcType=INTEGER}, #{description,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{rank,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.aweika.common.sys.entitySys.SysPermission">
+  <insert id="insertSelective" parameterType="com.com.aweika.common.sys.entitySys.SysPermission">
     insert into sys_permission
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -141,7 +141,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.aweika.common.sys.entitySys.SysPermission">
+  <update id="updateByPrimaryKeySelective" parameterType="com.com.aweika.common.sys.entitySys.SysPermission">
     update sys_permission
     <set>
       <if test="name != null">
@@ -189,7 +189,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.aweika.common.sys.entitySys.SysPermission">
+  <update id="updateByPrimaryKey" parameterType="com.com.aweika.common.sys.entitySys.SysPermission">
     update sys_permission
     set name = #{name,jdbcType=VARCHAR},
       permission = #{permission,jdbcType=VARCHAR},

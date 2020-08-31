@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demoTest" />
         <module name="mysql-proxy" />
-        <module name="wzszjx-common" />
+        <module name="socketTest" />
         <module name="protected_private" />
         <module name="SpringTransactional" />
         <module name="RabbitMqTestDemo" />
@@ -19,9 +19,11 @@
         <module name="SpringAopTest" />
         <module name="demo-spirng-boot-starter" />
         <module name="generic" />
+        <module name="websocket-test" />
+        <module name="springboot-websocket-chat" />
         <module name="aweika-es-api" />
         <module name="common" />
-        <module name="socketTest" />
+        <module name="wzszjx-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,7 +42,10 @@
       <module name="RabbitMqTestDemoConsumer" target="1.8" />
       <module name="socketTest" target="1.8" />
       <module name="SpringAopTest" target="1.8" />
+      <module name="springboot-websocket-chat" target="1.8" />
+      <module name="springboot-websocket-demo" target="1.8" />
       <module name="SpringTransactional" target="1.8" />
+      <module name="websocket-test" target="1.8" />
       <module name="wzszjx-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -61,6 +66,9 @@
       <module name="mysql-proxy" options="-parameters" />
       <module name="protected_private" options="-parameters" />
       <module name="socketTest" options="-parameters" />
+      <module name="springboot-websocket-chat" options="-parameters" />
+      <module name="springboot-websocket-demo" options="-parameters" />
+      <module name="websocket-test" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.com.aweika.dao.SysUserDao">
-  <resultMap id="BaseResultMap" type="com.aweika.common.sys.entitySys.SysUser">
+<mapper namespace="com.com.com.aweika.dao.SysUserDao">
+  <resultMap id="BaseResultMap" type="com.com.aweika.common.sys.entitySys.SysUser">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -269,7 +269,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>-->
 
-  <insert id="insert" parameterType="com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+  <insert id="insert" parameterType="com.com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
     insert into sys_user (id, username, password,
     real_name, unit_level, county,
     town, plat, mobile,
@@ -287,7 +287,7 @@
     #{isAdmin,jdbcType=INTEGER}, #{createId,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}
     )
   </insert>
-  <insert id="insertSelective" parameterType="com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+  <insert id="insertSelective" parameterType="com.com.aweika.common.sys.entitySys.SysUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
     insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -420,7 +420,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.aweika.common.sys.entitySys.SysUser">
+  <update id="updateByPrimaryKeySelective" parameterType="com.com.aweika.common.sys.entitySys.SysUser">
     update sys_user
     <set>
       <if test="username != null">
@@ -489,7 +489,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.aweika.common.sys.entitySys.SysUser">
+  <update id="updateByPrimaryKey" parameterType="com.com.aweika.common.sys.entitySys.SysUser">
     update sys_user
     set username = #{username,jdbcType=VARCHAR},
     password = #{password,jdbcType=VARCHAR},

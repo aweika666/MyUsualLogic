@@ -18,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" filepath="$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/protected_private/protected_private.iml" filepath="$PROJECT_DIR$/protected_private/protected_private.iml" />
       <module fileurl="file://$PROJECT_DIR$/socketTest/socketTest.iml" filepath="$PROJECT_DIR$/socketTest/socketTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-websocket-chat/springboot-websocket-chat.iml" filepath="$PROJECT_DIR$/springboot-websocket-chat/springboot-websocket-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-test/websocket-test.iml" filepath="$PROJECT_DIR$/websocket-test/websocket-test.iml" />
     </modules>
   </component>
 </project>
