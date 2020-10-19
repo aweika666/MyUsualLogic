@@ -47,8 +47,8 @@ public class OssServiceImpl implements OssService {
     // 注意：accessKeyId和accessKeySecret前后都没有空格，从控制台复制时请检查并去除多余的空格。
     /*private  String accessKeyId = "<YourAccessKeyId>";
     private  String accessKeySecret = "<YourAccessKeySecret>";*/
-    // private  String accessKeyId = "LTAIlpKehMsyTLXI";
-    //private  String accessKeySecret = "NJiKdHip6hDqmRdXHGILTYuqBZnU6O";
+    // private  String accessKeyId = "aa";
+    //private  String accessKeySecret = "aa";
 
     // Bucket用来管理所存储Object的存储空间，详细描述请参看“开发人员指南 > 基本概念 > OSS基本概念介绍”。
     // Bucket命名规范如下：只能包括小写字母，数字和短横线（-），必须以小写字母或者数字开头，长度必须在3-63字节之间。
@@ -59,10 +59,10 @@ public class OssServiceImpl implements OssService {
     //private  String firstKey = "my-first-key";
 
     public static void main(String[] args) {
-        String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
-        String accessKeyId = "LTAIlpKehMsyTLXI";
-        String accessKeySecret = "NJiKdHip6hDqmRdXHGILTYuqBZnU6O";
-        String bucketName = "yscredit-test";
+        String endpoint = "Aa";
+        String accessKeyId = "aa";
+        String accessKeySecret = "aa";
+        String bucketName = "aa-test";
         String firstKey = "my-first-key";
         // 日志配置，OSS Java SDK使用log4j记录错误信息。示例程序会在工程目录下生成“oss-demo.log”日志文件，默认日志级别是INFO。
         // 日志的配置文件是“conf/log4j.properties”，如果您不需要日志，可以没有日志配置文件和下面的日志配置。
