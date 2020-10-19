@@ -8,40 +8,55 @@ import java.util.Date;
  * @author Michael
  * @date   2020/07/10
  */
+/*
 public class User {
-    /**
+    */
+/**
      * 用户id
-     */
+     *//*
+
     private Long userId;
 
-    /**
+    */
+/**
      * 用户名称
-     */
+     *//*
+
     private String userName;
 
-    /**
+    */
+/**
      * 用户手机
-     */
+     *//*
+
     private String userPhone;
 
-    /**
+    */
+/**
      * 住址
-     */
+     *//*
+
     private String address;
 
-    /**
+    */
+/**
      * 权重，大者优先
-     */
+     *//*
+
     private Integer weight;
 
-    /**
+    */
+/**
      * 创建时间
-     */
+     *//*
+
     private Date createdAt;
 
-    /**
+    */
+/**
      * 更新时间
-     */
+     *//*
+
     private Date updatedAt;
 
     public Long getUserId() {
@@ -99,4 +114,4 @@ public class User {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
-}
+}*/

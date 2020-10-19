@@ -49,4 +49,6 @@ public class WebSocketChatApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebSocketChatApplication.class, args);
     }
+
+
 }

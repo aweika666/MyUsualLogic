@@ -6,5 +6,17 @@ package com.aweika.enumTest;
  * @description:
  */
 public enum Season {
-    SPRING,SUMMER,AUTUMN,WINTER
+    SPRING(222, "bbb"), SUMMER, AUTUMN, WINTER;
+
+    private Integer code;
+
+    private String message;
+
+    Season(Integer code, String message) {
+        this.code = code;
+        this.message = message;
+    }
+
+    Season() {
+    }
 }

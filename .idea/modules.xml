@@ -13,8 +13,11 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" filepath="$PROJECT_DIR$/demo-spirng-boot-starter/demo-spirng-boot-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoTest/demoTest.iml" filepath="$PROJECT_DIR$/demoTest/demoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyexcel-demo/easyexcel-demo.iml" filepath="$PROJECT_DIR$/easyexcel-demo/easyexcel-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/enumTest/enumTest.iml" filepath="$PROJECT_DIR$/enumTest/enumTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-Generator/mybatis-plus-Generator.iml" filepath="$PROJECT_DIR$/mybatis-plus-Generator/mybatis-plus-Generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plus-demo-test/mybatis-plus-demo-test.iml" filepath="$PROJECT_DIR$/mybatis-plus-demo-test/mybatis-plus-demo-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" filepath="$PROJECT_DIR$/mysql-proxy/mysql-proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/protected_private/protected_private.iml" filepath="$PROJECT_DIR$/protected_private/protected_private.iml" />
       <module fileurl="file://$PROJECT_DIR$/socketTest/socketTest.iml" filepath="$PROJECT_DIR$/socketTest/socketTest.iml" />
