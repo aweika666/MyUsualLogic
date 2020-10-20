@@ -23,4 +23,4 @@ out/
 *.iml
 node_modules/
 /logs/
-*.class
+.class
