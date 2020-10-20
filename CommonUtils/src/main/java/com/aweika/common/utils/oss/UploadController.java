@@ -100,7 +100,7 @@ public class UploadController {
         try {
 
             /*String fileTitle = url.substring(url.lastIndexOf("-") + 1, url.length());
-            OSSClient ossClient = new OSSClient(OssConfig.ENTFILE_ENDPOINT, "LTAIlpKehMsyTLXI", "NJiKdHip6hDqmRdXHGILTYuqBZnU6O");
+            OSSClient ossClient = new OSSClient(OssConfig.ENTFILE_ENDPOINT, "..", "..");
             // 下载OSS文件到本地文件。如果指定的本地文件存在会覆盖，不存在则新建。
             if (url.indexOf(OssConfig.ENTFILE_PDFACCESS) >= 0) {
                 url = url.replace(OssConfig.ENTFILE_PDFACCESS, "");
@@ -108,13 +108,13 @@ public class UploadController {
             ossClient.getObject(new GetObjectRequest(OssConfig.ENTFILE_BUCKETNAME, url), new File(downLoadPath + fileTitle));
             // 关闭OSSClient。
             ossClient.shutdown();*/
-            if (url.contains("yscredit-test.oss-cn-hangzhou.aliyuncs.com/yscredit-test")){
-                url = url.replace("http://yscredit-test.oss-cn-hangzhou.aliyuncs.com/", "");
+            if (url.contains("aweika-test.oss-cn-hangzhou.aliyuncs.com/aweika-test")){
+                url = url.replace("http://aweika-test.oss-cn-hangzhou.aliyuncs.com/", "");
                 //从oss读取文件
                 fileTitle = url.substring(url.lastIndexOf("-") + 1, url.length());
-                ossClient = new OSSClient("http://oss-cn-hangzhou.aliyuncs.com", "LTAIlpKehMsyTLXI", "NJiKdHip6hDqmRdXHGILTYuqBZnU6O");
+                ossClient = new OSSClient(" .. ", "..", "..");
                 // 下载OSS文件到本地文件。如果指定的本地文件存在会覆盖，不存在则新建。
-                ossClient.getObject(new GetObjectRequest("yscredit-test", url), new File(OssConfig.UPLOAD_PATH + fileTitle));
+                ossClient.getObject(new GetObjectRequest("aweika-test", url), new File(OssConfig.UPLOAD_PATH + fileTitle));
             }else {
                 url = url.replace(OssConfig.ENTFILE_PDFACCESS, "");
                 //从oss读取文件
