@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/demoTest/pom.xml" />
         <option value="$PROJECT_DIR$/protected_private/pom.xml" />
         <option value="$PROJECT_DIR$/aweika-es-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mongoDB-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

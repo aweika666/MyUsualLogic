@@ -8,25 +8,26 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demoTest" />
         <module name="mysql-proxy" />
-        <module name="socketTest" />
         <module name="mybatis-plus-demo-test" />
         <module name="protected_private" />
         <module name="SpringTransactional" />
         <module name="RabbitMqTestDemo" />
+        <module name="mybatis-plus-Generator" />
         <module name="CommonUtils" />
         <module name="RabbitMqTestDemoConsumer" />
-        <module name="aweika-es-api" />
         <module name="enumTest" />
         <module name="Idempotency-spring-boot-starter" />
         <module name="SpringAopTest" />
+        <module name="wzszjx-common" />
         <module name="demo-spirng-boot-starter" />
         <module name="generic" />
         <module name="websocket-test" />
+        <module name="mongoDB-demo" />
         <module name="springboot-websocket-chat" />
-        <module name="mybatis-plus-Generator" />
+        <module name="aweika-es-api" />
         <module name="common" />
         <module name="easyexcel-demo" />
-        <module name="wzszjx-common" />
+        <module name="socketTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +40,7 @@
       <module name="enumTest" target="1.8" />
       <module name="generic" target="1.8" />
       <module name="Idempotency-spring-boot-starter" target="1.8" />
+      <module name="mongoDB-demo" target="1.8" />
       <module name="mybatis-plus-demo-test" target="1.8" />
       <module name="mybatis-plus-Generator" target="1.8" />
       <module name="mysql-proxy" target="1.8" />
@@ -70,6 +72,7 @@
       <module name="easyexcel-demo" options="-parameters" />
       <module name="enumTest" options="-parameters" />
       <module name="generic" options="-parameters" />
+      <module name="mongoDB-demo" options="-parameters" />
       <module name="mybatis-plus-Generator" options="-parameters" />
       <module name="mybatis-plus-demo-test" options="-parameters" />
       <module name="mysql-proxy" options="-parameters" />
